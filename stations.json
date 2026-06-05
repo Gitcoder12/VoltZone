@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "city": "Hyderabad",
+  "stations": [
+    {
+      "id": "VZ001", "name": "VoltZone Hitech City", "lat": 17.4486, "lng": 78.3762,
+      "charger_types": ["Type-2", "CCS2", "CHAdeMO"],
+      "total_ports": 8, "available_ports": 3,
+      "fast_charge": true, "price_per_kwh_inr": 12,
+      "ev_rentals": true, "device_charging": true, "backup_power_kva": 50,
+      "open_24h": true, "rating": 4.6
+    },
+    {
+      "id": "VZ002", "name": "VoltZone Jubilee Hills", "lat": 17.4314, "lng": 78.4081,
+      "charger_types": ["Type-2", "CCS2"],
+      "total_ports": 4, "available_ports": 4,
+      "fast_charge": false, "price_per_kwh_inr": 10,
+      "ev_rentals": false, "device_charging": true, "backup_power_kva": 20,
+      "open_24h": false, "rating": 4.2
+    },
+    {
+      "id": "VZ003", "name": "VoltZone Gachibowli", "lat": 17.4239, "lng": 78.3501,
+      "charger_types": ["Type-2", "CCS2", "Bharat DC-001"],
+      "total_ports": 12, "available_ports": 7,
+      "fast_charge": true, "price_per_kwh_inr": 11,
+      "ev_rentals": true, "device_charging": true, "backup_power_kva": 100,
+      "open_24h": true, "rating": 4.8
+    }
+  ],
+  "ev_fleet": [
+    { "id": "EV001", "model": "Ather 450X", "type": "scooter", "range_km": 85, "available": true, "station_id": "VZ001", "rate_per_hr_inr": 60 },
+    { "id": "EV002", "model": "Tata Nexon EV", "type": "car", "range_km": 312, "available": false, "station_id": "VZ003", "rate_per_hr_inr": 250 },
+    { "id": "EV003", "model": "Ola S1 Pro", "type": "scooter", "range_km": 135, "available": true, "station_id": "VZ003", "rate_per_hr_inr": 70 }
+  ]
+}
